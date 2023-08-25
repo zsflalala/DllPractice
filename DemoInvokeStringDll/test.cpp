@@ -6,6 +6,7 @@ TEST(SpringTestCase, NormalSplit1)
 	std::vector<std::string> res{"dadf", "sdfe", "few"};
 	std::vector<std::string> testRes = splitString("dadf,sdfe,few", ',');
 	ASSERT_EQ(res, testRes);
+	ASSERT_EQ(res, testRes);
 }
 
 TEST(SpringTestCase, NormalSplit2)
