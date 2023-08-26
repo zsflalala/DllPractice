@@ -11,14 +11,14 @@ TEST(SpringTestCase, NormalSplit1)
 TEST(SpringTestCase, NormalSplit2)
 {
 	std::vector<std::string> res{"Hello", "C++", "World"};
-	std::vector<std::string> testRes = splitString("Hello,,C++,,World", ',');
+	std::vector<std::string> testRes = splitString(",,Hello,,C++,,World,,", ',');
 	ASSERT_EQ(res, testRes);
 }
 
 TEST(SpringTestCase, EmptySplit1)
 {
 	std::vector<std::string> res{"Hello", "World!"};
-	std::vector<std::string> testRes = splitString("  Hello World!", ' ');
+	std::vector<std::string> testRes = splitString("  Hello World! ", ' ');
 	ASSERT_EQ(res, testRes);
 }
 
